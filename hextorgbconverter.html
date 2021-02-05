@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hex to RGB</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="./hex.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="first">
+                <li><a href="#" >Color Conversion</a></li>
+                <li><a href="hextorgbconverter.html" >Hex to RGB</a></li>
+                <li><a href="rgbtohexconverter.html" >RGB to HEX</a></li>
+            </ul>
+            
+            
+        </nav>
+    </header>
+
+    <section class="section-1">
+        <form action="">
+            <fieldset class="fieldset"> 
+                <legend class="label">Hex to RGB Converter</legend>
+                <p><label class="label">Enter Hex color (#RRGGBB):</label></p><br>
+                <p>
+                    <input type="text" class="hexvalue" placeholder="RRGGBB">
+                </p>
+                <p><label class="label">R : </label>
+                   <input type="text" class="red" disabled>
+                   <label class="label">G : </label>
+                   <input type="text" class="green" disabled>
+                   <label class="label">B : </label>
+                   <input type="text" class="blue" disabled>
+                </p>
+                <!-- <div class="result"></div> -->
+                <p>
+                    <button type="button" class="but">Convert</button>
+                    <input type="reset" value="Reset" class="but">
+                    <button type="button" class="but copy">Copy</button>
+                    <a href="rgbtohexconverter.html" class="but">Swap</a>
+                    <br>
+                    <p><label class="label">RGB color code : </label></p>
+                    <input  class="rgbvalue" placeholder="RGB(0,0,0)">
+                </p>
+            </fieldset>
+        </form>
+        
+    </section>
+    <div class="examples">
+       <h2>Hex to RGB conversion</h2>
+       <ul class="ul"> 
+           <li>Get the 2 left digits of the hex color code and convert to decimal value to get the red color level.</li>
+           <li>Get the 2 middle digits of the hex color code and convert to decimal value to get the green color level.</li>
+           <li>Get the 2 right digits of the hex color code and convert to decimal value to get the blue color level.
+        </li>
+        </ul>
+
+        <h3>Example:1</h3>
+        <p class="ull">Convert red hex color code FF0000 to RGB color:</p>
+        <p class="special">Hex = FF0000</p>
+        <p class="ull">So the RGB colors are:</p>
+        <p class="special">R = FF<sub>16</sub> = 255<sub>10</sub></p>
+        <p class="special">G = D7<sub>16</sub> = 215<sub>10</sub></p>
+        <p class="special">B = 00<sub>16</sub> = 0<sub>10</sub></p>
+        <p>Or</p>
+        <p class="special">RGB = (255, 215, 0)</p>
+    </div>
+    <footer>
+        <p>Utility Appl</p>
+    </footer>
+</body>
+</html>

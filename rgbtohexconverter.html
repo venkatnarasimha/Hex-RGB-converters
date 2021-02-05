@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB to Hex</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./rgb.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="first">
+                <li><a href="#" >Color Conversion</a></li>
+                <li><a href="hextorgbconverter.html" >Hex to RGB</a></li>
+                <li><a href="rgbtohexconverter.html" >RGB to HEX</a></li>
+            </ul>
+            
+            
+        </nav>
+    </header>
+    <section class="section-1">
+        <form action="">
+            <fieldset class="fieldset"> 
+                <legend class="label">RGB to Hex Converter</legend>
+                <p><label class="label">Enter red, green and blue color levels (0..255) : </label></p>
+                <br><p><label class="label">Red Color(R)</label></p>
+                <p>
+                    <input type="text" class="red-texts" value='0'>
+                    <input type="range" min='0' max='255' value='0' class="red-slider">
+                </p>
+                <p><label class="label">Green Color(G)</label></p>
+                <p>
+                    <input type="text" class="green-texts" value='0'>
+                    <input type="range" min='0' max='255' value='0' class="green-slider">
+                </p>
+                <p><label class="label">Blue Color(B)</label></p>
+                <p>
+                    <input type="text" class="blue-texts" value='0'>
+                    <input type="range" min='0' max='255' value='0' class="blue-slider">
+                </p>
+                <div class="result"></div>
+                <p>
+                    <button type="button" class="but">Convert</button>
+                    <input type="reset" value="Reset" class="but">
+                    <button type="button" class="but copy">Copy</button>
+                    <a href="hextorgbconverter.html" class="but">Swap</a>
+                    <br>
+                    <p><label class="label">Hex color code : </label></p>
+                    <input  class="hexvalue" placeholder="Hexvalue">
+                </p>
+            </fieldset>
+        </form>
+        
+    </section>
+    <div class="examples">
+        <h2>RGB to hex conversion</h2>
+        <ul class="ul"> 
+            <li>Convert the red, green and blue color values from decimal to hex.</li>
+            <li>Concatenate the 3 hex values of the red, green and blue togather: RRGGBB.
+         </li>
+         </ul>
+ 
+         <h3>Example:1</h3>
+         <p class="ull">Convert red color (255,0,0) to hex color code:</p>
+         
+         <p class="ull">RGB colors are:</p>
+         <p class="special">R = 255<sub>10</sub> = FF<sub>16</sub></p>
+         <p class="special">G = 0<sub>10</sub> = 00<sub>16</sub></p>
+         <p class="special">B = 0<sub>10</sub> = 00<sub>16</sub></p>
+         <p class="ull">So the HEX color cose is:</p>
+         <p class="special">Hex = FF0000</p>
+         
+     </div>
+     <footer>
+         <p>Utility Appl</p>
+     </footer>
+</body>
+</html>
