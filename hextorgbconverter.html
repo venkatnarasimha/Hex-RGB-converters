@@ -8,19 +8,19 @@
     <script src="./hex.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="first">
-                <li><a href="#" >Color Conversion</a></li>
-                <li><a href="hextorgbconverter.html" >Hex to RGB</a></li>
-                <li><a href="rgbtohexconverter.html" >RGB to HEX</a></li>
-            </ul>
-            
-            
-        </nav>
-    </header>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Color converters
+            </button>
+            <div class="dropdown-content">
+                <a href="hextorgbconverter.html">HEX to RGB</a>
+                <a href="rgbtohexconverter.html">RGB to HEX</a>
+              </div>
+        </div>
+    </div>
 
-    <section class="section-1">
+    <section class="wrapper">
         <form action="">
             <fieldset class="fieldset"> 
                 <legend class="label">Hex to RGB Converter</legend>
@@ -35,7 +35,7 @@
                    <label class="label">B : </label>
                    <input type="text" class="blue" disabled>
                 </p>
-                <!-- <div class="result"></div> -->
+                 <div class="result"></div> 
                 <p>
                     <button type="button" class="but">Convert</button>
                     <input type="reset" value="Reset" class="but">
@@ -49,7 +49,7 @@
         </form>
         
     </section>
-    <div class="examples">
+    <div class="examples wrapper">
        <h2>Hex to RGB conversion</h2>
        <ul class="ul"> 
            <li>Get the 2 left digits of the hex color code and convert to decimal value to get the red color level.</li>
@@ -68,8 +68,15 @@
         <p>Or</p>
         <p class="special">RGB = (255, 215, 0)</p>
     </div>
-    <footer>
-        <p>Utility Appl</p>
+    <div class=above-footer>
+
+    </div>
+    <footer class="footer">
+        <span class="footer-copyright-wat">© UTILITY APPLICATIONS</span>
+        <span class="footer-copyright-divider">|</span>
+        <span class="footer-copyright-wat">COLOR CONVERTERS</span>
+        <span class="footer-copyright-divider">|</span>
+        <span class="footer-copyright-arr"> NO COPYRIGHTS</span>
     </footer>
 </body>
 </html>

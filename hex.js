@@ -13,8 +13,10 @@ const blueval = document.querySelector('.blue');
 const greenval = document.querySelector('.green');
 const button = document.querySelector('.but');
 const rgbval = document.querySelector('.rgbvalue');
-const result = document.querySelector('.result');
+const results = document.querySelector('.result');
 const copybut = document.querySelector('.copy');
+
+
 button.addEventListener('click', () => {
     const str2 = `${hexval.value}`;
     if (str2.length >= 7) alert('Length should be lessthan 6 digits');
@@ -23,6 +25,12 @@ button.addEventListener('click', () => {
     [redval.value, greenval.value, blueval.value] = output;
     rgbval.value = str;
 });
+
+hexval.addEventListener('input',()=>{
+    let col='#'+hexval.value;
+    console.log(col+"ddd");
+    results.style.backgroundColor=col;
+})
 copybut.addEventListener('click', () => {
     const copy = document.querySelector('.rgbvalue');
     console.log('clicked:', copy);

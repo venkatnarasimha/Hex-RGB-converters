@@ -8,17 +8,17 @@
     <script src="./rgb.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="first">
-                <li><a href="#" >Color Conversion</a></li>
-                <li><a href="hextorgbconverter.html" >Hex to RGB</a></li>
-                <li><a href="rgbtohexconverter.html" >RGB to HEX</a></li>
-            </ul>
-            
-            
-        </nav>
-    </header>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Color converters
+            </button>
+            <div class="dropdown-content">
+                <a href="hextorgbconverter.html">HEX to RGB</a>
+                <a href="rgbtohexconverter.html">RGB to HEX</a>
+              </div>
+        </div>
+    </div>
     <section class="section-1">
         <form action="">
             <fieldset class="fieldset"> 
@@ -26,17 +26,17 @@
                 <p><label class="label">Enter red, green and blue color levels (0..255) : </label></p>
                 <br><p><label class="label">Red Color(R)</label></p>
                 <p>
-                    <input type="text" class="red-texts" value='0'>
+                    <input type="text" class="red-texts" placeholder='0'>
                     <input type="range" min='0' max='255' value='0' class="red-slider">
                 </p>
                 <p><label class="label">Green Color(G)</label></p>
                 <p>
-                    <input type="text" class="green-texts" value='0'>
+                    <input type="text" class="green-texts" placeholder='0'>
                     <input type="range" min='0' max='255' value='0' class="green-slider">
                 </p>
                 <p><label class="label">Blue Color(B)</label></p>
                 <p>
-                    <input type="text" class="blue-texts" value='0'>
+                    <input type="text" class="blue-texts" placeholder='0'>
                     <input type="range" min='0' max='255' value='0' class="blue-slider">
                 </p>
                 <div class="result"></div>
@@ -72,8 +72,15 @@
          <p class="special">Hex = FF0000</p>
          
      </div>
-     <footer>
-         <p>Utility Appl</p>
-     </footer>
+     <div class=above-footer>
+
+    </div>
+    <footer class="footer">
+        <span class="footer-copyright-wat">© UTILITY APPLICATIONS</span>
+        <span class="footer-copyright-divider">|</span>
+        <span class="footer-copyright-wat">COLOR CONVERTERS</span>
+        <span class="footer-copyright-divider">|</span>
+        <span class="footer-copyright-arr"> NO COPYRIGHTS</span>
+    </footer>
 </body>
 </html>
